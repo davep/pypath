@@ -31,6 +31,7 @@
 ;;; Code:
 
 (require 'python)
+(require 'subr-x)
 
 (defun pypath--find-manage (path route)
   "Look for manage.py.
