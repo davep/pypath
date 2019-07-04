@@ -2,7 +2,7 @@
 ;; Copyright 2019 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 0.01
+;; Version: 1.0
 ;; Keywords: languages
 ;; URL: https://github.com/davep/pypath.el
 ;; Package-Requires: ((emacs "25"))
