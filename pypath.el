@@ -61,9 +61,8 @@ there is a problem an `error' is thrown. Rules include:
     (unless pyfun
       (error "No Python defun found around `point'"))
     (let* ((path (reverse (split-string (buffer-file-name) "/")))
-           (module (file-name-sans-extension (pop path)))
-           (pyfun (string-join (append (pypath--find-manage path nil) (list module pyfun)) ".")))
-      pyfun)))
+           (module (file-name-sans-extension (pop path))))
+      (string-join (append (pypath--find-manage path nil) (list module pyfun)) "."))))
 
 ;;;###autoload
 (defun pypath ()
