@@ -51,7 +51,7 @@ As a side-effect, various environmental checks are done and if
 there is a problem an `error' is thrown. Rules include:
 
 - Current buffer must be in `python-mode'
-- Current buffer must have a non-nil `buffer-file-name'
+- Current buffer must be associated with a file
 - `python-info-current-defun' must return a non-nil value"
   (unless (derived-mode-p 'python-mode)
     (error "This is only designed for use with `python-mode'"))
